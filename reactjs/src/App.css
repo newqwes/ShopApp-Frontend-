@@ -68,7 +68,7 @@
   display: block;
 }
 
-.inside:hover{
+.inside:hover {
   opacity: 100%;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.5);
@@ -140,7 +140,7 @@
   border: 1px solid #f869f8;
 }
 
-.tabs{
+.tabs {
   margin-top: 20px;
   padding: 10px;
   color: white;
@@ -198,8 +198,3 @@
 .logAndRegistry {
   float: right;
 }
-
-
-
-
-

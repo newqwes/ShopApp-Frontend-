@@ -1,16 +1,23 @@
-import axios from "axios";
+import Axios from 'axios';
+
+const instance = Axios.create({
+  baseURL: 'http://localhost:8085/',
+});
 
 export const getProduct = async () => {
-    const result = await axios.get("http://localhost:8085/product")
-    return result.data;
-}
+  const result = await instance.get('product');
 
-export const getOneProduct = async (id) => {
-    const result = await axios.get("http://localhost:8085/product/"+ id)
-    return result.data;
-}
+  return result.data;
+};
+
+export const getOneProduct = async id => {
+  const result = await instance.get(`product/${id}`);
+
+  return result.data;
+};
 
 export const getUsers = async () => {
-    const result = await axios.get("http://localhost:8085/users")
-    return result.data;
-}
+  const result = await instance.get('users');
+
+  return result.data;
+};
